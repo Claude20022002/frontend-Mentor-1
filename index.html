@@ -20,6 +20,12 @@
                 background-color: lightblue;
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             }
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
             .attribution {
                 font-size: 11px;
                 text-align: center;
@@ -59,29 +65,31 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="box-1">
-                <img
-                    src="../qr-code-component-main/images/image-qr-code.png"
-                    alt=""
-                />
+        <div class="content">
+            <div class="container">
+                <div class="box-1">
+                    <img
+                        src="../qr-code-component-main/images/image-qr-code.png"
+                        alt=""
+                    />
+                </div>
+                <div class="box-2">
+                    <h5>Improve your frond-end skills by building projects</h5>
+                    <p>
+                        Scan the QR code to visit Frontend Mentor and take your
+                        coding skills to the next level
+                    </p>
+                </div>
             </div>
-            <div class="box-2">
-                <h5>Improve your frond-end skills by building projects</h5>
-                <p>
-                    Scan the QR code to visit Frontend Mentor and take your
-                    coding skills to the next level
-                </p>
-            </div>
-        </div>
 
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+            </div>
         </div>
     </body>
 </html>
