@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <title>Frontend Mentor | QR code component</title>
 
-  Improve your front-end skills by building projects
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            body {
+                background-color: lightblue;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .attribution a {
+                color: hsl(228, 10%, 48%);
+            }
+            .container {
+                border: none;
+                width: 250px;
+                height: 400px;
+                margin: 0 auto;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #fff;
+                box-sizing: border-box;
+            }
+            .container .box-1 {
+                border: none;
+                width: 100%;
+                height: 69%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .container .box-1 img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .container .box-2 {
+                text-align: center;
+            }
+            .container .box-2 p {
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box-1">
+                <img
+                    src="../qr-code-component-main/images/image-qr-code.png"
+                    alt=""
+                />
+            </div>
+            <div class="box-2">
+                <h5>Improve your frond-end skills by building projects</h5>
+                <p>
+                    Scan the QR code to visit Frontend Mentor and take your
+                    coding skills to the next level
+                </p>
+            </div>
+        </div>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </body>
 </html>
